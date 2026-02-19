@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- SECURITY META HEADERS -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+<!-- PRIMARY SEO -->
+<title>Sheraz Hussain | SOC Analyst &middot; DFIR Specialist &middot; SOAR Engineer &middot; Penetration Tester</title>
+<meta name="description" content="Sheraz Hussain &mdash; cybersecurity professional based in Islamabad, Pakistan. SOC Analyst at C4SAM Vienna, Security Automation Expert at Leverify USA, and Junior Penetration Tester at ITSOLERA. Certified Ethical Hacker (CEH). Open to global remote roles.">
+<meta name="keywords" content="Sheraz Hussain, SOC Analyst, SIEM Engineer, DFIR Specialist, SOAR Engineer, Penetration Tester, Cybersecurity Pakistan, Wazuh, Splunk, ELK Stack, CEH, OSCP, Threat Intelligence, Incident Response, Islamabad, Air University, C4SAM, Leverify, ITSOLERA, MITRE ATT&CK, Security Automation">
+<meta name="author" content="Sheraz Hussain">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="theme-color" content="#00d4ff">
+<link rel="canonical" href="https://sherazhussain.github.io/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sherazhussain.github.io/">
+<meta property="og:title" content="Sheraz Hussain | Cybersecurity Professional">
+<meta property="og:description" content="SOC Analyst &middot; DFIR Specialist &middot; SOAR Engineer &middot; Penetration Tester. Concurrent roles across Austria, USA and Pakistan. CEH Certified. Open to global opportunities.">
+<meta property="og:image" content="https://sherazhussain.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sheraz Hussain - Cybersecurity Professional Portfolio">
+<meta property="og:site_name" content="Sheraz Hussain Portfolio">
+<meta property="og:locale" content="en_US">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sheraz Hussain | Cybersecurity Professional">
+<meta name="twitter:description" content="SOC Analyst, DFIR Specialist, SOAR Engineer, Penetration Tester. CEH Certified. Open to global remote roles.">
+<meta name="twitter:image" content="https://sherazhussain.github.io/og-image.png">
+<meta name="twitter:image:alt" content="Sheraz Hussain Cybersecurity Portfolio">
+
+<!-- JSON-LD STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sherazhussain.github.io/#person",
+      "name": "Sheraz Hussain",
+      "url": "https://sherazhussain.github.io/",
+      "jobTitle": "SOC Analyst, DFIR Specialist, SOAR Engineer, Penetration Tester",
+      "description": "Versatile cybersecurity professional delivering concurrent roles across Austria, USA, and Pakistan. Certified Ethical Hacker.",
+      "telephone": "+923326257075",
+      "address": {"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"},
+      "sameAs": ["https://www.linkedin.com/in/sherazhussain-cyberexpert"],
+      "alumniOf": {"@type":"CollegeOrUniversity","name":"Air University","address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"}},
+      "worksFor": [
+        {"@type":"Organization","name":"C4SAM","address":{"@type":"PostalAddress","addressLocality":"Vienna","addressCountry":"AT"}},
+        {"@type":"Organization","name":"Leverify","address":{"@type":"PostalAddress","addressLocality":"Bellevue","addressRegion":"WA","addressCountry":"US"}},
+        {"@type":"Organization","name":"ITSOLERA (PVT) LTD","address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"}}
+      ],
+      "knowsAbout": ["SOC Operations","SIEM Engineering","DFIR","SOAR Automation","Penetration Testing","Wazuh","Elastic Stack","Splunk","SentinelOne","MITRE ATT&CK","ISO 27001","NIST CSF","Threat Intelligence","Python","Malware Analysis","Digital Forensics"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sherazhussain.github.io/#website",
+      "url": "https://sherazhussain.github.io/",
+      "name": "Sheraz Hussain | Cybersecurity Professional",
+      "description": "Portfolio of Sheraz Hussain - SOC Analyst, DFIR Specialist, SOAR Engineer, and Penetration Tester.",
+      "author": {"@id":"https://sherazhussain.github.io/#person"},
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+
+<!-- FAVICON (inline SVG) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23020b0e'/%3E%3Cpolygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='none' stroke='%2300d4ff' stroke-width='4'/%3E%3Ctext x='50' y='62' font-family='monospace' font-size='38' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3ESH%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23020b0e'/%3E%3Cpolygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='none' stroke='%2300d4ff' stroke-width='4'/%3E%3Ctext x='50' y='62' font-family='monospace' font-size='38' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3ESH%3C/text%3E%3C/svg%3E">
+
+<!-- PERFORMANCE PRECONNECT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* ══════════════════════════════════════════════════════
+   SECURITY: Disable text selection, copy, drag, print
+══════════════════════════════════════════════════════ */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+img { -webkit-user-drag: none; user-drag: none; pointer-events: none; }
+@media print {
+  body { display: none !important; }
+}
+
+/* ══════════════════════════════════════════════════════
+   VARIABLES & RESET
+══════════════════════════════════════════════════════ */
+/* SECURITY: Disable text selection */
+* { -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
+input, textarea { -webkit-user-select:text !important; user-select:text !important; }
+
+:root {
+  --bg:    #020b0e;
+  --bg2:   #050f14;
+  --panel: #0a1e24;
+  --border: #0d3040;
+  --border-bright: #0e5068;
+  --cyan:  #00d4ff;
+  --green: #00ff88;
+  --orange:#ff8c00;
+  --text:  #cce8f0;
+  --text-dim: #4a7a8a;
+  --text-mid: #88bfcc;
+  --glow-c: 0 0 20px rgba(0,212,255,0.4);
+  --glow-g: 0 0 20px rgba(0,255,136,0.4);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Rajdhani',sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  cursor:none;
+}
+
+/* CUSTOM CURSOR */
+.cursor { width:12px; height:12px; background:var(--cyan); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9999; box-shadow:var(--glow-c); }
+.cursor-ring { width:36px; height:36px; border:1px solid rgba(0,212,255,0.4); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9998; transition:width .2s,height .2s; }
+
+/* SCANLINES */
+body::before { content:''; position:fixed; inset:0; background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.12) 2px,rgba(0,0,0,0.12) 4px); pointer-events:none; z-index:1000; }
+
+/* MATRIX CANVAS */
+#matrix-canvas { position:fixed; top:0; left:0; width:100%; height:100%; opacity:.035; z-index:0; pointer-events:none; }
+
+/* ══════════════════════════════════════════════════════
+   NAV
+══════════════════════════════════════════════════════ */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(2,11,14,.93); backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  padding:0 5%; display:flex; align-items:center; justify-content:space-between; height:60px;
+}
+.nav-logo { font-family:'Orbitron',monospace; font-size:.92rem; font-weight:900; color:var(--cyan); text-shadow:var(--glow-c); letter-spacing:.12em; }
+.nav-logo span { color:var(--green); }
+.nav-links { display:flex; gap:1.5rem; list-style:none; }
+.nav-links a { font-family:'Share Tech Mono',monospace; font-size:.7rem; color:var(--text-dim); text-decoration:none; letter-spacing:.1em; transition:color .2s,text-shadow .2s; text-transform:uppercase; }
+.nav-links a:hover { color:var(--cyan); text-shadow:var(--glow-c); }
+.nav-status { display:flex; align-items:center; gap:7px; font-family:'Share Tech Mono',monospace; font-size:.65rem; color:var(--green); }
+.status-dot { width:6px; height:6px; background:var(--green); border-radius:50%; animation:pulse 2s infinite; box-shadow:var(--glow-g); }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+
+section { position:relative; z-index:1; padding:100px 8%; }
+
+/* ══════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════ */
+#hero { min-height:100vh; display:flex; align-items:center; padding-top:60px; }
+.hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; width:100%; }
+.hero-badge { font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--green); letter-spacing:.2em; margin-bottom:1rem; display:flex; align-items:center; gap:10px; }
+.hero-badge::before { content:''; display:block; width:40px; height:1px; background:var(--green); box-shadow:var(--glow-g); }
+h1.hero-name { font-family:'Orbitron',monospace; font-size:clamp(2.1rem,4.2vw,3.4rem); font-weight:900; line-height:1.05; color:#fff; letter-spacing:.04em; margin-bottom:.4rem; }
+h1.hero-name .highlight { color:var(--cyan); text-shadow:var(--glow-c); }
+.hero-subtitle { font-family:'Share Tech Mono',monospace; font-size:.75rem; color:var(--text-mid); margin-bottom:.5rem; letter-spacing:.08em; line-height:1.9; }
+.hero-title { font-family:'Share Tech Mono',monospace; font-size:clamp(.78rem,1.3vw,.92rem); color:var(--cyan); margin-bottom:1.5rem; letter-spacing:.1em; min-height:1.4em; }
+.type-cursor { display:inline-block; width:2px; height:.9em; background:var(--cyan); margin-left:3px; vertical-align:middle; animation:blink 1s step-end infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.hero-desc { font-size:.98rem; color:var(--text-dim); max-width:480px; margin-bottom:2.5rem; line-height:1.75; }
+.hero-ctas { display:flex; gap:1rem; flex-wrap:wrap; }
+.btn-primary { font-family:'Share Tech Mono',monospace; font-size:.76rem; letter-spacing:.15em; text-transform:uppercase; padding:12px 26px; background:var(--cyan); color:var(--bg); border:none; text-decoration:none; transition:all .2s; clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); font-weight:700; cursor:none; }
+.btn-primary:hover { background:var(--green); box-shadow:0 0 30px rgba(0,255,136,.5); }
+.btn-secondary { font-family:'Share Tech Mono',monospace; font-size:.76rem; letter-spacing:.15em; text-transform:uppercase; padding:12px 26px; background:transparent; color:var(--cyan); border:1px solid var(--cyan); text-decoration:none; transition:all .2s; clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px)); cursor:none; }
+.btn-secondary:hover { background:rgba(0,212,255,.1); box-shadow:var(--glow-c); }
+
+/* TERMINAL */
+.hero-terminal { background:var(--panel); border:1px solid var(--border); position:relative; overflow:hidden; }
+.hero-terminal::before { content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(0,212,255,.03) 0%,transparent 60%); pointer-events:none; }
+.terminal-bar { background:var(--border); padding:8px 14px; display:flex; align-items:center; gap:8px; }
+.t-dot { width:10px; height:10px; border-radius:50%; }
+.t-dot-r{background:#ff5f57} .t-dot-y{background:#ffbd2e} .t-dot-g{background:#28ca41}
+.terminal-title { font-family:'Share Tech Mono',monospace; font-size:.66rem; color:var(--text-dim); margin-left:6px; letter-spacing:.08em; }
+.terminal-body { padding:18px 16px; font-family:'Share Tech Mono',monospace; font-size:.76rem; line-height:1.95; min-height:300px; }
+.t-line{display:flex;gap:10px} .t-prompt{color:var(--green);flex-shrink:0} .t-cmd{color:var(--cyan)}
+.t-out{color:var(--text-dim);padding-left:18px} .t-key{color:var(--orange)} .t-val{color:var(--text)}
+.t-section{color:var(--text-mid)} .t-blank{height:8px}
+.terminal-glow { position:absolute; bottom:-40px; right:-40px; width:200px; height:200px; background:radial-gradient(circle,rgba(0,212,255,.07) 0%,transparent 70%); pointer-events:none; }
+
+/* STATS */
+.hero-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:1.5rem; background:var(--border); border:1px solid var(--border); }
+.stat-box { background:var(--panel); padding:13px; text-align:center; }
+.stat-num { font-family:'Orbitron',monospace; font-size:1.35rem; font-weight:900; color:var(--cyan); display:block; text-shadow:var(--glow-c); }
+.stat-label { font-family:'Share Tech Mono',monospace; font-size:.56rem; color:var(--text-dim); letter-spacing:.07em; text-transform:uppercase; }
+
+/* SECTION HEADERS */
+.section-header { margin-bottom:3.5rem; }
+.section-tag { font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--green); letter-spacing:.25em; text-transform:uppercase; display:flex; align-items:center; gap:12px; margin-bottom:.7rem; }
+.section-tag::after { content:''; flex:1; height:1px; background:linear-gradient(to right,var(--border-bright),transparent); }
+h2.section-title { font-family:'Orbitron',monospace; font-size:clamp(1.6rem,2.8vw,2.3rem); font-weight:900; color:#fff; letter-spacing:.05em; }
+h2.section-title .accent { color:var(--cyan); }
+
+/* ══════════════════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════════════════ */
+#about { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.about-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:4rem; align-items:start; }
+.about-id-card { border:1px solid var(--border); background:var(--panel); position:relative; overflow:hidden; }
+.about-id-card::after { content:'VERIFIED'; position:absolute; top:14px; right:-22px; font-family:'Orbitron',monospace; font-size:.56rem; color:var(--green); letter-spacing:.2em; padding:4px 38px; background:rgba(0,255,136,.1); border:1px solid var(--green); transform:rotate(30deg); transform-origin:right center; }
+.id-card-header { background:linear-gradient(135deg,var(--border) 0%,var(--border-bright) 100%); padding:16px 20px; display:flex; align-items:center; gap:12px; }
+.id-avatar { width:52px; height:52px; background:linear-gradient(135deg,var(--cyan),var(--green)); clip-path:polygon(50% 0%,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%); display:flex; align-items:center; justify-content:center; font-family:'Orbitron',monospace; font-weight:900; font-size:1rem; color:var(--bg); }
+.id-name-block .id-name { font-family:'Orbitron',monospace; font-size:.9rem; font-weight:700; color:#fff; letter-spacing:.05em; }
+.id-name-block .id-role { font-family:'Share Tech Mono',monospace; font-size:.6rem; color:var(--cyan); letter-spacing:.12em; }
+.id-card-body { padding:14px 18px; }
+.id-row { display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid var(--border); font-family:'Share Tech Mono',monospace; font-size:.66rem; }
+.id-row:last-child { border-bottom:none; }
+.id-row-label{color:var(--text-dim)} .id-row-val{color:var(--text);text-align:right}
+.id-row-val.green{color:var(--green)} .id-row-val.cyan{color:var(--cyan)} .id-row-val.orange{color:var(--orange)}
+.about-content p { color:var(--text-dim); font-size:1rem; line-height:1.8; margin-bottom:1.1rem; }
+.about-content p strong { color:var(--cyan); font-weight:600; }
+.expertise-tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:1.5rem; }
+.tag { font-family:'Share Tech Mono',monospace; font-size:.68rem; color:var(--cyan); border:1px solid var(--border-bright); padding:4px 11px; background:rgba(0,212,255,.05); letter-spacing:.07em; transition:all .2s; }
+.tag:hover{background:rgba(0,212,255,.12);border-color:var(--cyan);box-shadow:var(--glow-c)}
+.tag.green{color:var(--green);border-color:rgba(0,255,136,.3);background:rgba(0,255,136,.05)}
+.tag.green:hover{background:rgba(0,255,136,.12);border-color:var(--green);box-shadow:var(--glow-g)}
+.tag.orange{color:var(--orange);border-color:rgba(255,140,0,.3);background:rgba(255,140,0,.05)}
+
+/* ══════════════════════════════════════════════════════
+   SKILLS
+══════════════════════════════════════════════════════ */
+#skills{background:var(--bg)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.skill-category { background:var(--panel); border:1px solid var(--border); padding:22px; position:relative; overflow:hidden; transition:border-color .3s; }
+.skill-category:hover{border-color:var(--border-bright)}
+.skill-category::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:linear-gradient(to bottom,var(--cyan),transparent)}
+.skill-cat-title { font-family:'Orbitron',monospace; font-size:.72rem; font-weight:700; color:var(--cyan); letter-spacing:.12em; margin-bottom:16px; text-transform:uppercase; display:flex; align-items:center; gap:10px; }
+.cat-icon { width:26px; height:26px; background:rgba(0,212,255,.1); border:1px solid var(--border-bright); display:flex; align-items:center; justify-content:center; font-size:.75rem; flex-shrink:0; }
+.skill-item{margin-bottom:12px}
+.skill-info { display:flex; justify-content:space-between; margin-bottom:4px; font-family:'Share Tech Mono',monospace; font-size:.68rem; }
+.skill-name{color:var(--text)} .skill-pct{color:var(--text-dim)}
+.skill-bar-bg{height:3px;background:var(--border);overflow:hidden}
+.skill-bar-fill { height:100%; background:linear-gradient(to right,var(--cyan),var(--green)); box-shadow:0 0 8px rgba(0,212,255,.4); transform:scaleX(0); transform-origin:left; transition:transform 1.2s cubic-bezier(.4,0,.2,1); }
+.skill-bar-fill.animated{transform:scaleX(1)}
+
+/* ══════════════════════════════════════════════════════
+   EXPERIENCE
+══════════════════════════════════════════════════════ */
+#experience{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--cyan),transparent)}
+.timeline-item{position:relative;margin-bottom:2.8rem}
+.timeline-item::before{content:'';position:absolute;left:-36px;top:6px;width:10px;height:10px;background:var(--cyan);border:2px solid var(--bg2);box-shadow:var(--glow-c);clip-path:polygon(50% 0%,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%)}
+.timeline-date{font-family:'Share Tech Mono',monospace;font-size:.66rem;color:var(--green);letter-spacing:.15em;margin-bottom:4px}
+.timeline-role{font-family:'Orbitron',monospace;font-size:.95rem;font-weight:700;color:#fff;letter-spacing:.04em;margin-bottom:3px}
+.timeline-company{font-family:'Share Tech Mono',monospace;font-size:.73rem;color:var(--cyan);margin-bottom:9px;letter-spacing:.07em}
+.timeline-desc{color:var(--text-dim);font-size:.93rem;line-height:1.75;margin-bottom:11px}
+.timeline-badges{display:flex;flex-wrap:wrap;gap:5px}
+.badge{font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--text-dim);border:1px solid var(--border);padding:2px 8px;letter-spacing:.05em;background:rgba(255,255,255,.02)}
+
+/* ══════════════════════════════════════════════════════
+   PROJECTS
+══════════════════════════════════════════════════════ */
+#projects{background:var(--bg)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem}
+.project-card{background:var(--panel);border:1px solid var(--border);position:relative;overflow:hidden;transition:all .3s;display:flex;flex-direction:column}
+.project-card:hover{border-color:var(--border-bright);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,212,255,.1)}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--cyan),var(--green));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.project-card:hover::before{transform:scaleX(1)}
+.project-header{padding:16px 20px 12px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.project-icon-wrap{width:40px;height:40px;background:rgba(0,212,255,.07);border:1px solid var(--border-bright);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.project-status{font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--green);border:1px solid rgba(0,255,136,.3);padding:3px 9px;background:rgba(0,255,136,.05);letter-spacing:.1em}
+.project-status.wip{color:var(--orange);border-color:rgba(255,140,0,.3);background:rgba(255,140,0,.05)}
+.project-body{padding:14px 20px 18px;flex:1;display:flex;flex-direction:column}
+.project-name{font-family:'Orbitron',monospace;font-size:.9rem;font-weight:700;color:#fff;letter-spacing:.04em;margin-bottom:6px}
+.project-name .project-code{font-size:.6rem;color:var(--text-dim);display:block;font-weight:400;letter-spacing:.14em;margin-bottom:3px}
+.project-metric{font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--green);margin-bottom:9px;padding:5px 9px;background:rgba(0,255,136,.05);border:1px solid rgba(0,255,136,.2)}
+.project-desc{font-size:.88rem;color:var(--text-dim);line-height:1.7;flex:1;margin-bottom:13px}
+.project-tech{display:flex;flex-wrap:wrap;gap:5px}
+.tech-chip{font-family:'Share Tech Mono',monospace;font-size:.58rem;color:var(--text-dim);border:1px solid var(--border);padding:2px 7px}
+
+/* ══════════════════════════════════════════════════════
+   EDUCATION
+══════════════════════════════════════════════════════ */
+#education{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.5rem}
+.edu-card{background:var(--panel);border:1px solid var(--border);padding:24px;position:relative;overflow:hidden;transition:border-color .3s}
+.edu-card:hover{border-color:var(--border-bright)}
+.edu-card .corner-accent{position:absolute;top:0;right:0;width:0;height:0;border-style:solid;border-width:0 32px 32px 0;border-color:transparent var(--border-bright) transparent transparent}
+.edu-degree{font-family:'Orbitron',monospace;font-size:.76rem;font-weight:700;color:var(--cyan);letter-spacing:.05em;margin-bottom:4px}
+.edu-institution{font-size:1rem;font-weight:600;color:#fff;margin-bottom:3px}
+.edu-meta{font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text-dim);letter-spacing:.07em;margin-bottom:13px}
+.edu-details{font-size:.88rem;color:var(--text-dim);line-height:1.7}
+.cgpa-badge{display:inline-block;font-family:'Orbitron',monospace;font-size:.85rem;font-weight:900;color:var(--green);padding:5px 13px;border:1px solid rgba(0,255,136,.4);background:rgba(0,255,136,.07);margin-top:11px;text-shadow:var(--glow-g)}
+.edu-progress{margin-top:12px}
+.edu-prog-label{font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--text-dim);letter-spacing:.1em;display:flex;justify-content:space-between;margin-bottom:4px}
+.edu-prog-bar{height:3px;background:var(--border);overflow:hidden}
+.edu-prog-fill{height:100%;background:linear-gradient(to right,var(--cyan),var(--green))}
+
+/* ══════════════════════════════════════════════════════
+   CERTIFICATIONS
+══════════════════════════════════════════════════════ */
+#certifications{background:var(--bg)}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:1rem}
+.cert-item{background:var(--panel);border:1px solid var(--border);padding:14px 17px;display:flex;align-items:center;gap:13px;transition:all .2s}
+.cert-item:hover{border-color:var(--border-bright)}
+.cert-icon{width:36px;height:36px;background:rgba(0,212,255,.07);border:1px solid var(--border-bright);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.cert-name{font-family:'Orbitron',monospace;font-size:.7rem;font-weight:700;color:#fff;letter-spacing:.04em;margin-bottom:2px}
+.cert-issuer{font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--text-dim);letter-spacing:.06em}
+.cert-status{font-family:'Share Tech Mono',monospace;font-size:.58rem;margin-top:2px;letter-spacing:.07em}
+.cert-status.active{color:var(--green)} .cert-status.progress{color:var(--orange)}
+
+/* ══════════════════════════════════════════════════════
+   CONTACT
+══════════════════════════════════════════════════════ */
+#contact{background:var(--bg2);border-top:1px solid var(--border)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-info p{font-size:.98rem;color:var(--text-dim);line-height:1.8;margin-bottom:2rem}
+.contact-links{display:flex;flex-direction:column;gap:9px}
+.contact-link{display:flex;align-items:center;gap:13px;padding:12px 16px;border:1px solid var(--border);background:var(--panel);text-decoration:none;transition:all .2s;color:var(--text)}
+.contact-link:hover{border-color:var(--cyan);background:rgba(0,212,255,.05);color:var(--cyan);box-shadow:var(--glow-c)}
+.contact-link-icon{font-size:.95rem;color:var(--cyan);flex-shrink:0;width:18px;text-align:center}
+.contact-link-label{font-family:'Share Tech Mono',monospace;font-size:.68rem;letter-spacing:.09em}
+.contact-form{display:flex;flex-direction:column;gap:13px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-label{font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text-dim);letter-spacing:.14em;text-transform:uppercase}
+.form-input{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'Share Tech Mono',monospace;font-size:.78rem;outline:none;transition:border-color .2s;width:100%}
+.form-input:focus{border-color:var(--cyan);box-shadow:var(--glow-c)}
+.form-input::placeholder{color:var(--text-dim)}
+textarea.form-input{resize:vertical;min-height:88px}
+.form-submit{font-family:'Share Tech Mono',monospace;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;padding:12px 24px;background:var(--cyan);color:var(--bg);border:none;cursor:none;transition:all .2s;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));font-weight:700;align-self:flex-start}
+.form-submit:hover{background:var(--green);box-shadow:0 0 30px rgba(0,255,136,.5)}
+
+/* FOOTER */
+footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var(--border);padding:20px 8%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.footer-copy{font-family:'Share Tech Mono',monospace;font-size:.65rem;color:var(--text-dim);letter-spacing:.09em}
+.footer-copy .accent{color:var(--cyan)}
+
+/* FADE-IN SCROLL */
+.fade-up{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* ══════════════════════════════════════════════════════
+   SECURITY OVERLAY — dev tools warning
+══════════════════════════════════════════════════════ */
+#sec-overlay{display:none;position:fixed;inset:0;background:var(--bg);z-index:99999;align-items:center;justify-content:center;flex-direction:column;gap:16px}
+#sec-overlay.active{display:flex}
+#sec-overlay .sec-msg{font-family:'Orbitron',monospace;font-size:1.2rem;color:var(--cyan);text-shadow:var(--glow-c)}
+#sec-overlay .sec-sub{font-family:'Share Tech Mono',monospace;font-size:.75rem;color:var(--text-dim)}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-terminal{display:none}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  nav{padding:0 5%}
+  .nav-links{display:none}
+  section{padding:70px 5%}
+}
+</style>
+</head>
+<body>
+
+<!-- Security overlay (shown if DevTools opened) -->
+<div id="sec-overlay">
+  <div class="sec-msg">⚠ SECURITY ALERT</div>
+  <div class="sec-sub">Unauthorised inspection detected. Content protected.</div>
+</div>
+
+
+<!-- DevTools Block Overlay -->
+<div id="devtools-block" style="display:none;position:fixed;inset:0;background:#020b0e;z-index:99999;align-items:center;justify-content:center;flex-direction:column;gap:1.5rem;font-family:'Orbitron',monospace;">
+  <div style="font-size:3.5rem">&#128274;</div>
+  <div style="font-size:1.4rem;color:#ff2244;letter-spacing:0.1em;text-align:center">ACCESS RESTRICTED</div>
+  <div style="font-family:'Share Tech Mono',monospace;font-size:0.78rem;color:#4a7a8a;letter-spacing:0.12em;text-align:center">Developer tools detected. This site is protected.<br>Close developer tools to continue.</div>
+</div>
+
+<!-- Security Warning Banner -->
+<div style="background:rgba(255,34,68,0.07);border-bottom:1px solid rgba(255,34,68,0.25);text-align:center;padding:6px;font-family:'Share Tech Mono',monospace;font-size:0.62rem;color:rgba(255,34,68,0.6);letter-spacing:0.12em;position:relative;z-index:99;">
+  &#9888;&nbsp; PROTECTED CONTENT &mdash; Unauthorised reproduction, scraping or redistribution is strictly prohibited &nbsp;&#9888;
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<canvas id="matrix-canvas"></canvas>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-logo">SHERAZ<span>.</span>SEC</div>
+  <ul class="nav-links">
+    <li><a href="#about">./about</a></li>
+    <li><a href="#skills">./skills</a></li>
+    <li><a href="#experience">./experience</a></li>
+    <li><a href="#projects">./projects</a></li>
+    <li><a href="#education">./education</a></li>
+    <li><a href="#certifications">./certs</a></li>
+    <li><a href="#contact">./contact</a></li>
+  </ul>
+  <div class="nav-status"><div class="status-dot"></div>SYSTEMS ONLINE</div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero" aria-label="Hero introduction">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">CYBERSECURITY PROFESSIONAL // ISLAMABAD, PK</div>
+      <h1 class="hero-name"><span class="highlight">SHERAZ</span><br>HUSSAIN</h1>
+      <div class="hero-subtitle">SOC Analyst &amp; SIEM Engineer &nbsp;·&nbsp; DFIR Specialist<br>SOAR Engineer &nbsp;·&nbsp; Penetration Tester</div>
+      <div class="hero-title"><span id="typed-text"></span><span class="type-cursor"></span></div>
+      <p class="hero-desc">Versatile cybersecurity professional delivering concurrent roles across Austria, the US, and Pakistan. Engineering enterprise-grade SIEM, AI-driven SOAR automation, forensic investigations, and offensive security assessments — simultaneously.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">VIEW PROJECTS</a>
+        <a href="#contact" class="btn-secondary">GET IN TOUCH</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <div class="t-dot t-dot-r"></div><div class="t-dot t-dot-y"></div><div class="t-dot t-dot-g"></div>
+          <span class="terminal-title">sheraz@sec-node:~$</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami --full</span></div>
+          <div class="t-blank"></div>
+          <div class="t-out"><span class="t-key">name:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="t-val">Sheraz Hussain</span></div>
+          <div class="t-out"><span class="t-key">email:</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="t-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6b5aea3b4a7bcb2a7a4afb5aef1f2ff86a1aba7afaae8a5a9ab">[email&#160;protected]</a></span></div>
+          <div class="t-out"><span class="t-key">phone:</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="t-val">+92 332 625 7075</span></div>
+          <div class="t-out"><span class="t-key">base:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="t-val">Islamabad, Pakistan</span></div>
+          <div class="t-out"><span class="t-key">active_roles:</span><span class="t-val"> 3 concurrent (AT · US · PK)</span></div>
+          <div class="t-blank"></div>
+          <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat current_roles.txt</span></div>
+          <div class="t-blank"></div>
+          <div class="t-out"><span class="t-section">▸ SOC Analyst &amp; SIEM Eng  →  C4SAM, Vienna (Remote)</span></div>
+          <div class="t-out"><span class="t-section">▸ Security Automation (SOAR) →  Leverify, USA (Remote)</span></div>
+          <div class="t-out"><span class="t-section">▸ Jr. Penetration Tester   →  ITSOLERA, Islamabad</span></div>
+          <div class="t-blank"></div>
+          <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">status --availability</span></div>
+          <div class="t-out"><span style="color:var(--green)">✔ Open to new opportunities</span></div>
+        </div>
+        <div class="terminal-glow"></div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box"><span class="stat-num">48+</span><span class="stat-label">Services Secured</span></div>
+        <div class="stat-box"><span class="stat-num">3</span><span class="stat-label">Concurrent Roles</span></div>
+        <div class="stat-box"><span class="stat-num">60%</span><span class="stat-label">MTTR Reduction</span></div>
+        <div class="stat-box"><span class="stat-num">95%</span><span class="stat-label">Ransomware Detect.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">01 // IDENTIFICATION</div>
+    <h2 class="section-title">About <span class="accent">Me</span></h2>
+  </div>
+  <div class="about-grid fade-up">
+    <div>
+      <div class="about-id-card">
+        <div class="id-card-header">
+          <div class="id-avatar">SH</div>
+          <div class="id-name-block">
+            <div class="id-name">SHERAZ HUSSAIN</div>
+            <div class="id-role">SOC · DFIR · SOAR · PENTEST</div>
+          </div>
+        </div>
+        <div class="id-card-body">
+          <div class="id-row"><span class="id-row-label">CERT</span><span class="id-row-val green">CEH [ACTIVE]</span></div>
+          <div class="id-row"><span class="id-row-label">COMPANY 1</span><span class="id-row-val cyan">C4SAM — Vienna, AT</span></div>
+          <div class="id-row"><span class="id-row-label">COMPANY 2</span><span class="id-row-val cyan">Leverify — Bellevue, US</span></div>
+          <div class="id-row"><span class="id-row-label">COMPANY 3</span><span class="id-row-val cyan">ITSOLERA — Islamabad</span></div>
+          <div class="id-row"><span class="id-row-label">GOV ROLES</span><span class="id-row-val">NCCIA · National CERT</span></div>
+          <div class="id-row"><span class="id-row-label">EDUCATION</span><span class="id-row-val cyan">B.Sc Cybersecurity</span></div>
+          <div class="id-row"><span class="id-row-label">UNIVERSITY</span><span class="id-row-val">Air University, ISB</span></div>
+          <div class="id-row"><span class="id-row-label">CGPA</span><span class="id-row-val green">3.7 / 4.0</span></div>
+          <div class="id-row"><span class="id-row-label">PURSUING</span><span class="id-row-val orange">GCIH · CySA+ · OSCP</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p>I'm a <strong>multi-domain cybersecurity professional</strong> currently running three concurrent roles across Austria, the United States, and Pakistan — a testament to my capacity for parallel execution, cross-cultural collaboration, and self-directed delivery.</p>
+      <p>My work spans the full security spectrum: as a <strong>SOC Analyst at C4SAM (Vienna)</strong>, I triage 100+ daily alerts with 98% SLA compliance. As <strong>Security Automation Expert at Leverify (USA)</strong>, I engineer AI-driven SOAR workflows that let 5 analysts handle the workload of 15. As <strong>Junior Penetration Tester at ITSOLERA</strong>, I find the holes before the adversaries do.</p>
+      <p>I've also served as a <strong>Digital Forensics Investigator at Pakistan's NCCIA</strong> and as a <strong>CTI Analyst at National CERT Pakistan</strong> — giving me rare ground-level perspective on national-scale threat response. I lead the DFIR team at Air University Cyber Security Society, mentoring 100+ members.</p>
+      <div class="expertise-tags">
+        <span class="tag">SOC Operations</span><span class="tag">SIEM Engineering</span><span class="tag">DFIR</span>
+        <span class="tag green">SOAR Automation</span><span class="tag green">Penetration Testing</span>
+        <span class="tag">Threat Intelligence</span><span class="tag">MITRE ATT&CK</span><span class="tag">ISO 27001</span>
+        <span class="tag">NIST CSF</span><span class="tag green">AI/ML Security</span><span class="tag">Digital Forensics</span>
+        <span class="tag">Malware Analysis</span><span class="tag orange">OSCP (In Progress)</span><span class="tag">CTF Competitor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills" aria-labelledby="skills-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">02 // CAPABILITIES</div>
+    <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">🛡</div>SOC & SIEM</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Wazuh SIEM</span><span class="skill-pct">93%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.93"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Elastic Stack (ELK)</span><span class="skill-pct">91%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.91"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Splunk Enterprise Security</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.88"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Microsoft Sentinel</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.80"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">SentinelOne EDR</span><span class="skill-pct">86%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.86"></div></div></div>
+    </div>
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">⚡</div>SOAR & AUTOMATION</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Splunk SOAR</span><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.90"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">n8n Automation</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.88"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Cortex XSOAR</span><span class="skill-pct">83%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.83"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Python Playbooks / REST API</span><span class="skill-pct">91%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.91"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">AI/ML Automation Agents</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.82"></div></div></div>
+    </div>
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">🔬</div>DFIR & FORENSICS</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">FTK Imager / Autopsy</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.88"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Volatility Framework</span><span class="skill-pct">84%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.84"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Velociraptor (VQL)</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.78"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Memory &amp; Disk Forensics</span><span class="skill-pct">86%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.86"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">DFIR-IRIS / TheHive</span><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.85"></div></div></div>
+    </div>
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">⚔</div>OFFENSIVE SECURITY</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Web App Penetration Testing</span><span class="skill-pct">84%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.84"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Metasploit / Burp Suite Pro</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.82"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">OSINT (Maltego / SpiderFoot)</span><span class="skill-pct">87%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.87"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">PoC Exploit Development</span><span class="skill-pct">78%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.78"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Reverse Engineering</span><span class="skill-pct">74%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.74"></div></div></div>
+    </div>
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">📋</div>COMPLIANCE</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">ISO/IEC 27001 ISMS</span><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.88"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">NIST CSF / SP 800-61</span><span class="skill-pct">86%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.86"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">CIS Controls v8</span><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.85"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">DORA / NIS2</span><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.80"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">PCI DSS / GDPR</span><span class="skill-pct">76%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.76"></div></div></div>
+    </div>
+    <div class="skill-category fade-up">
+      <div class="skill-cat-title"><div class="cat-icon">⚙</div>SCRIPTING & CLOUD</div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Python</span><span class="skill-pct">92%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.92"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">PowerShell / Bash</span><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.82"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">AWS / Azure</span><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.75"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">Docker / CI/CD</span><span class="skill-pct">74%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.74"></div></div></div>
+      <div class="skill-item"><div class="skill-info"><span class="skill-name">KQL / SPL</span><span class="skill-pct">87%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-w="0.87"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience" aria-labelledby="exp-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">03 // DEPLOYMENT HISTORY</div>
+    <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+  </div>
+  <div class="timeline">
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">05/2025 — PRESENT</div>
+      <div class="timeline-role">SOC Analyst & SIEM Engineer</div>
+      <div class="timeline-company">C4SAM · Vienna, Austria (Remote) — Enterprise Managed Security Services</div>
+      <div class="timeline-desc">Monitor, triage, and investigate 100+ daily security alerts across enterprise SIEM platforms, maintaining 98% SLA compliance. Conduct Tier-1 and Tier-2 incident analysis, correlating events against IOCs and MITRE ATT&CK TTPs. Authored and tuned custom detection rules contributing to a 30% reduction in false positive alert volume. Produce detailed incident reports in DFIR-IRIS and collaborate with global teams on threat hunting and playbook refinement.</div>
+      <div class="timeline-badges"><span class="badge">Wazuh</span><span class="badge">ELK</span><span class="badge">Splunk ES</span><span class="badge">DFIR-IRIS</span><span class="badge">MITRE ATT&CK</span><span class="badge">IOC Analysis</span><span class="badge">KQL</span><span class="badge">SPL</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">07/2025 — PRESENT</div>
+      <div class="timeline-role">Security Automation Expert (SOAR)</div>
+      <div class="timeline-company">Leverify · Bellevue, WA, USA (Remote) — Enterprise Security Operations</div>
+      <div class="timeline-desc">Lead design and implementation of SOAR workflows using Splunk SOAR and n8n, reducing MTTR by 60% across phishing, malware, and insider-threat use cases. Engineer AI-driven automation agents enabling 5 analysts to handle the workload of 15 FTEs. Designed 30+ SOAR playbooks aligned to NIST SP 800-61. Implemented SentinelOne, Cortex XSOAR, and DFIR-IRIS integrations for fully automated investigation-to-containment pipelines, eliminating 75% of manual analyst effort.</div>
+      <div class="timeline-badges"><span class="badge">Splunk SOAR</span><span class="badge">n8n</span><span class="badge">Cortex XSOAR</span><span class="badge">SentinelOne EDR</span><span class="badge">Python</span><span class="badge">REST API</span><span class="badge">NIST 800-61</span><span class="badge">AI/ML Agents</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">01/2026 — PRESENT</div>
+      <div class="timeline-role">Junior Penetration Tester</div>
+      <div class="timeline-company">ITSOLERA (PVT) LTD · Islamabad, Pakistan — Cybersecurity Assessments</div>
+      <div class="timeline-desc">Plan and execute web application, network, and infrastructure penetration testing using PTES and OWASP methodologies, delivering CVSS-scored findings with root-cause analysis. Develop proof-of-concept exploits demonstrating business-relevant attack paths. Maintain 90%+ vulnerability closure rate within agreed SLA windows. Authored the RedScout automated reconnaissance framework and collaborate with the blue team to validate detection coverage gaps.</div>
+      <div class="timeline-badges"><span class="badge">Kali Linux</span><span class="badge">Metasploit</span><span class="badge">Burp Suite Pro</span><span class="badge">Nmap</span><span class="badge">OWASP Top 10</span><span class="badge">PTES</span><span class="badge">PoC Development</span><span class="badge">Python</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">08/2025 — 10/2025</div>
+      <div class="timeline-role">Digital Forensics Investigator</div>
+      <div class="timeline-company">National Cyber Crime Investigation Agency (NCCIA) · Islamabad — Government</div>
+      <div class="timeline-desc">Assisted senior investigators in digital forensic investigations covering mobile, computer, and network systems from active criminal proceedings including malware-attributed financial fraud and data exfiltration cases. Conducted forensic imaging, data recovery, and artefact analysis across 20+ cases maintaining full chain-of-custody for evidentiary admissibility. Performed malware analysis and binary reverse engineering producing technical forensic reports under the PECA framework.</div>
+      <div class="timeline-badges"><span class="badge">FTK Imager</span><span class="badge">Autopsy</span><span class="badge">Volatility</span><span class="badge">Wireshark</span><span class="badge">Mobile Forensics</span><span class="badge">Malware Analysis</span><span class="badge">Chain-of-Custody</span><span class="badge">PECA</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">06/2025 — 08/2025</div>
+      <div class="timeline-role">Penetration Tester & CTI Analyst</div>
+      <div class="timeline-company">National CERT — Pakistan · Islamabad — Critical Infrastructure Protection</div>
+      <div class="timeline-desc">Conducted penetration testing against critical national infrastructure and government systems under formal rules-of-engagement, identifying high-severity vectors including authentication bypass and privilege escalation chains. Delivered cyber threat intelligence analysis covering threat actor TTPs and emerging vulnerability campaigns. Produced CVSS-scored, MITRE ATT&CK-mapped findings at executive and technical levels.</div>
+      <div class="timeline-badges"><span class="badge">National Infrastructure</span><span class="badge">Threat Intelligence</span><span class="badge">MITRE ATT&CK</span><span class="badge">STIX/TAXII</span><span class="badge">CVE Analysis</span><span class="badge">Privilege Escalation</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">04/2025 — 07/2025</div>
+      <div class="timeline-role">Data Engineer</div>
+      <div class="timeline-company">Leverify · Bellevue, WA, USA (Remote) — Promoted to Security Automation Expert</div>
+      <div class="timeline-desc">Designed and maintained scalable ETL pipelines processing 10M+ daily security events, increasing throughput efficiency by 30% through AI-assisted automation. Transformed raw data into structured datasets improving accessibility for downstream threat analytics and implemented data quality controls across cloud environments.</div>
+      <div class="timeline-badges"><span class="badge">Python</span><span class="badge">ETL Pipelines</span><span class="badge">AWS</span><span class="badge">Azure</span><span class="badge">AI Automation</span><span class="badge">Data Quality</span></div>
+    </div>
+
+    <div class="timeline-item fade-up">
+      <div class="timeline-date">09/2024 — PRESENT</div>
+      <div class="timeline-role">DFIR Team Lead</div>
+      <div class="timeline-company">Air University Cyber Security Society · Islamabad — 100+ Member Student Society</div>
+      <div class="timeline-desc">Lead a 12-member DFIR team delivering structured training workshops on memory forensics, disk imaging, packet analysis, malware triage, and NIST SP 800-61 methodology. Coordinate team participation in national and international CTF competitions, consistently ranking in the top quartile. Mentor junior members and produce training materials for 50+ student cohort sessions.</div>
+      <div class="timeline-badges"><span class="badge">Team Leadership</span><span class="badge">DFIR Training</span><span class="badge">CTF</span><span class="badge">NIST 800-61</span><span class="badge">Mentorship</span><span class="badge">Workshop Design</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" aria-labelledby="proj-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">04 // SIGNATURE OPERATIONS</div>
+    <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">🏗</div><span class="project-status">ACTIVE · 2023–PRESENT</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-001 // ENTERPRISE SIEM & AUTOMATION</span>SIEM Deployment & Automation Platform</div>
+        <div class="project-metric">▸ 70%+ MITRE ATT&CK coverage · Triage time: 45min → &lt;10min</div>
+        <div class="project-desc">Designed and deployed enterprise SIEM infrastructure integrating Wazuh, ELK Stack, and Splunk for centralised log collection, correlation, and alerting across 48+ monitored services. Authored 100+ custom detection rules mapped to MITRE ATT&CK. Integrated MISP and OpenCTI threat intelligence feeds with automated enrichment via n8n and Cortex XSOAR.</div>
+        <div class="project-tech"><span class="tech-chip">Wazuh</span><span class="tech-chip">ELK Stack</span><span class="tech-chip">Splunk</span><span class="tech-chip">DFIR-IRIS</span><span class="tech-chip">n8n</span><span class="tech-chip">SentinelOne EDR</span><span class="tech-chip">MISP</span><span class="tech-chip">OpenCTI</span></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">🧠</div><span class="project-status">COMPLETE · 2024–2025</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-002 // AI/ML · RANSOMWARE DEFENCE</span>Enterprise Ransomware Early Warning System</div>
+        <div class="project-metric">▸ 95%+ accuracy · &lt;3% FPR · LockBit 3.0 / BlackCat / Conti validated</div>
+        <div class="project-desc">Engineered an automated ransomware early-warning system using supervised ML to detect malicious encryption patterns before data exfiltration. Validated against LockBit 3.0, BlackCat/ALPHV, and Conti. Designed a tiered alert system with explainable AI rationale enabling rapid human validation and containment decisions.</div>
+        <div class="project-tech"><span class="tech-chip">Python</span><span class="tech-chip">scikit-learn</span><span class="tech-chip">Explainable AI</span><span class="tech-chip">Behavioural Detection</span><span class="tech-chip">Malware Analysis</span></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">💣</div><span class="project-status">ACTIVE · 2024–2025</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-003 // RED TEAM · PAYLOAD FRAMEWORK</span>PyloadForge</div>
+        <div class="project-metric">▸ 70% reduction in payload development time vs. manual assembly</div>
+        <div class="project-desc">Modular payload generation framework for authorised penetration testing and security research. Implements multiple payload types with configurable encoding and obfuscation layers for EDR evasion testing. Extensible module architecture enables integration of new payload templates, targeting techniques, and delivery mechanisms.</div>
+        <div class="project-tech"><span class="tech-chip">Python</span><span class="tech-chip">EDR Evasion</span><span class="tech-chip">Obfuscation</span><span class="tech-chip">Red Team</span><span class="tech-chip">Payload Engineering</span></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">🕵</div><span class="project-status">ACTIVE · 2024–PRESENT</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-004 // OSINT · THREAT INTELLIGENCE</span>MADROX</div>
+        <div class="project-metric">▸ Automated MITRE ATT&CK mapping for all ingested intelligence</div>
+        <div class="project-desc">Automated OSINT aggregation and correlation platform ingesting data from public threat feeds, dark-web monitoring, and social media channels to produce structured threat actor profiles. Implements automated MITRE ATT&CK technique mapping for intelligence-led security operations and detection gap analysis.</div>
+        <div class="project-tech"><span class="tech-chip">Python</span><span class="tech-chip">OpenCTI API</span><span class="tech-chip">MITRE ATT&CK Navigator</span><span class="tech-chip">OSINT</span><span class="tech-chip">Threat Profiling</span></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">🔭</div><span class="project-status">COMPLETE · 01/2026</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-005 // RECON · PENTEST FRAMEWORK</span>RedScout</div>
+        <div class="project-metric">▸ Unified recon pipeline · Metasploit / Nmap / SIEM integration</div>
+        <div class="project-desc">Automated reconnaissance framework for penetration testing, integrating network mapping, service enumeration, subdomain discovery, and vulnerability identification into a unified modular pipeline. CLI and API interfaces support integration with Metasploit, Nmap, and SIEM platforms.</div>
+        <div class="project-tech"><span class="tech-chip">Python</span><span class="tech-chip">Network Mapping</span><span class="tech-chip">DNS Enumeration</span><span class="tech-chip">Subdomain Discovery</span><span class="tech-chip">Metasploit Integration</span></div>
+      </div>
+    </div>
+
+    <div class="project-card fade-up">
+      <div class="project-header"><div class="project-icon-wrap">🏴</div><span class="project-status">ONGOING</span></div>
+      <div class="project-body">
+        <div class="project-name"><span class="project-code">PRJ-006 // CTF · COMPETITIONS</span>CTF Competition Record</div>
+        <div class="project-metric">▸ Consistently top quartile · Forensics & IR specialisation</div>
+        <div class="project-desc">Active CTF competitor through Air University Cyber Security Society with specialisation in forensics and incident response. Leads and coordinates team participation in national and international CTF competitions, consistently ranking within the top quartile of competing institutions.</div>
+        <div class="project-tech"><span class="tech-chip">Memory Forensics</span><span class="tech-chip">Network Forensics</span><span class="tech-chip">Malware Triage</span><span class="tech-chip">Reverse Engineering</span><span class="tech-chip">DFIR</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="education" aria-labelledby="edu-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">05 // ACADEMIC RECORD</div>
+    <h2 class="section-title">Education <span class="accent">Background</span></h2>
+  </div>
+  <div class="edu-grid">
+
+    <div class="edu-card fade-up">
+      <div class="corner-accent"></div>
+      <div class="edu-degree">BACHELOR OF SCIENCE</div>
+      <div class="edu-institution">Cybersecurity</div>
+      <div class="edu-meta">AIR UNIVERSITY, ISLAMABAD · 2022 — EXPECTED 2026</div>
+      <div class="edu-details">Specialised undergraduate degree in Cybersecurity. Core coursework: Digital Forensics · Reverse Engineering · Malware Analysis · Network Security · Mobile Forensics · Parallel &amp; Distributed Computing · Artificial Intelligence · Cybersecurity Policy &amp; Law.</div>
+      <div class="cgpa-badge">CGPA: 3.7 / 4.0</div>
+      <div class="edu-progress" style="margin-top:12px">
+        <div class="edu-prog-label"><span>COMPLETION</span><span>~75%</span></div>
+        <div class="edu-prog-bar"><div class="edu-prog-fill" style="width:75%"></div></div>
+      </div>
+    </div>
+
+    <div class="edu-card fade-up">
+      <div class="corner-accent"></div>
+      <div class="edu-degree">EXTRACURRICULAR LEADERSHIP</div>
+      <div class="edu-institution">Air University Cyber Security Society</div>
+      <div class="edu-meta">DFIR TEAM LEAD · 09/2024 — PRESENT · 100+ MEMBERS</div>
+      <div class="edu-details">Lead a 12-member DFIR team delivering semester-long workshops attended by 50+ students per cohort. Organised national and international CTF competition participation and mentored junior members in MITRE ATT&CK-mapped investigative techniques.</div>
+      <div class="edu-progress" style="margin-top:12px">
+        <div class="edu-prog-label"><span>LEADERSHIP TENURE</span><span>ACTIVE</span></div>
+        <div class="edu-prog-bar"><div class="edu-prog-fill" style="width:100%;background:linear-gradient(to right,var(--green),var(--cyan))"></div></div>
+      </div>
+    </div>
+
+    <div class="edu-card fade-up">
+      <div class="corner-accent"></div>
+      <div class="edu-degree">PROFESSIONAL DEVELOPMENT</div>
+      <div class="edu-institution">Multi-Role Concurrent Delivery</div>
+      <div class="edu-meta">AUSTRIA · USA · PAKISTAN · 2025 — PRESENT</div>
+      <div class="edu-details">Concurrently delivering high-impact roles across three countries and time zones — SOC operations in Austria, SOAR engineering in the US, and penetration testing in Pakistan — while maintaining a 3.7 GPA and leading a university security society of 100+ members.</div>
+      <div class="edu-progress" style="margin-top:12px">
+        <div class="edu-prog-label"><span>CONCURRENT EXECUTION</span><span>3 ROLES</span></div>
+        <div class="edu-prog-bar"><div class="edu-prog-fill" style="width:100%;background:linear-gradient(to right,var(--orange),var(--cyan))"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CERTIFICATIONS ═══ -->
+<section id="certifications" aria-labelledby="cert-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">06 // CREDENTIALS</div>
+    <h2 class="section-title">Certifications &amp; <span class="accent">Development</span></h2>
+  </div>
+  <div class="certs-grid fade-up">
+    <div class="cert-item"><div class="cert-icon">🎯</div><div><div class="cert-name">Certified Ethical Hacker (CEH)</div><div class="cert-issuer">Cybrary</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">🔎</div><div><div class="cert-name">Cyber Threat Intelligence (CTI) Analyst</div><div class="cert-issuer">arcX</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">🛡</div><div><div class="cert-name">CTI & Governance Analyst (CTIGA)</div><div class="cert-issuer">Red Team Leaders</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">📊</div><div><div class="cert-name">Security Operations Analyst</div><div class="cert-issuer">Cyber Academy</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">⚔</div><div><div class="cert-name">Ethical Hacking Essentials (EHE)</div><div class="cert-issuer">EC-Council</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">📋</div><div><div class="cert-name">ISO/IEC 27001 ISMS</div><div class="cert-issuer">Alison Institute</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">✅</div><div><div class="cert-name">ISO/IEC 9001:2026 QMS</div><div class="cert-issuer">Udemy</div><div class="cert-status active">✔ ACTIVE</div></div></div>
+    <div class="cert-item"><div class="cert-icon">🔥</div><div><div class="cert-name">GCIH — Certified Incident Handler</div><div class="cert-issuer">GIAC / SANS</div><div class="cert-status progress">⏳ IN PROGRESS — Q3 2026</div></div></div>
+    <div class="cert-item"><div class="cert-icon">📡</div><div><div class="cert-name">CompTIA CySA+</div><div class="cert-issuer">CompTIA</div><div class="cert-status progress">⏳ IN PROGRESS</div></div></div>
+    <div class="cert-item"><div class="cert-icon">💀</div><div><div class="cert-name">OSCP — Offensive Security</div><div class="cert-issuer">Offensive Security</div><div class="cert-status progress">⏳ IN PROGRESS — Q4 2026</div></div></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="section-header fade-up">
+    <div class="section-tag">07 // ESTABLISH CONNECTION</div>
+    <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+  </div>
+  <div class="contact-grid fade-up">
+    <div class="contact-info">
+      <p>Open to new opportunities across SOC Analyst, DFIR Specialist, Security Automation Engineer, and Penetration Tester roles — in the US, UK/EU, UAE, Austria, Australia, or Pakistan. Reach out directly or drop a message below.</p>
+      <div class="contact-links">
+        <a href="tel:+923326257075" class="contact-link"><span class="contact-link-icon">📞</span><span class="contact-link-label">+92 332 625 7075</span></a>
+        <a href="/cdn-cgi/l/email-protection#04776c6176657e7065666d776c33303d446369656d682a676b69" class="contact-link"><span class="contact-link-icon">✉</span><span class="contact-link-label"><span class="__cf_email__" data-cfemail="76051e1304170c0217141f051e41424f36111b171f1a5815191b">[email&#160;protected]</span></span></a>
+        <a href="https://linkedin.com/in/sherazhussain-cyberexpert" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-link-icon">in</span><span class="contact-link-label">linkedin.com/in/sherazhussain-cyberexpert</span></a>
+        <a href="#" class="contact-link"><span class="contact-link-icon">📍</span><span class="contact-link-label">Islamabad, Pakistan · Remote Worldwide</span></a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group"><label class="form-label">// YOUR_NAME</label><input type="text" class="form-input" placeholder="Enter your name" required></div>
+      <div class="form-group"><label class="form-label">// EMAIL_ADDRESS</label><input type="email" class="form-input" placeholder="your@email.com" required></div>
+      <div class="form-group"><label class="form-label">// SUBJECT</label><input type="text" class="form-input" placeholder="Job opportunity / Collaboration / Other"></div>
+      <div class="form-group"><label class="form-label">// MESSAGE</label><textarea class="form-input" placeholder="Describe your inquiry..." required></textarea></div>
+      <button type="submit" class="form-submit">TRANSMIT MESSAGE →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">© 2026 <span class="accent">SHERAZ HUSSAIN</span> // CYBERSECURITY PROFESSIONAL</div>
+  <div class="footer-copy">🔒 Content protected. All rights reserved.</div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ══════════════════════════
+   SECURITY PROTECTIONS
+══════════════════════════ */
+
+// 1. Disable right-click context menu
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// 2. Disable common keyboard shortcuts
+document.addEventListener('keydown', e => {
+  const blocked = (
+    (e.ctrlKey && ['u','s','a','c','p'].includes(e.key.toLowerCase())) || // Ctrl+U,S,A,C,P
+    (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(e.key.toLowerCase())) || // Ctrl+Shift+I,J,C
+    e.key === 'F12'
+  );
+  if (blocked) { e.preventDefault(); e.stopPropagation(); return false; }
+});
+
+// 3. DevTools detection (size-based)
+(function devToolsCheck(){
+  const threshold = 160;
+  function check(){
+    const widthDiff  = window.outerWidth  - window.innerWidth;
+    const heightDiff = window.outerHeight - window.innerHeight;
+    const overlay = document.getElementById('sec-overlay');
+    if (widthDiff > threshold || heightDiff > threshold) {
+      overlay.classList.add('active');
+    } else {
+      overlay.classList.remove('active');
+    }
+  }
+  window.addEventListener('resize', check);
+  setInterval(check, 1500);
+})();
+
+// 4. Disable drag on the whole page
+document.addEventListener('dragstart', e => e.preventDefault());
+
+// 5. Detect and block iframe embedding
+if (window.self !== window.top) {
+  window.top.location = window.self.location;
+}
+
+/* ══════════════════════════
+   CUSTOM CURSOR
+══════════════════════════ */
+const cursor = document.getElementById('cursor');
+const ring   = document.getElementById('cursorRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.transform = `translate(${mouseX-6}px,${mouseY-6}px)`;
+});
+(function animateRing(){
+  ringX += (mouseX-ringX)*0.12; ringY += (mouseY-ringY)*0.12;
+  ring.style.transform = `translate(${ringX-18}px,${ringY-18}px)`;
+  requestAnimationFrame(animateRing);
+})();
+document.querySelectorAll('a,button').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width='50px'; ring.style.height='50px'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; });
+});
+
+/* ══════════════════════════
+   MATRIX RAIN
+══════════════════════════ */
+const canvas = document.getElementById('matrix-canvas');
+const ctx    = canvas.getContext('2d');
+function resizeCanvas(){ canvas.width=window.innerWidth; canvas.height=window.innerHeight; }
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>?';
+let drops = [];
+function initDrops(){ drops = Array(Math.floor(canvas.width/20)).fill(1); }
+initDrops();
+window.addEventListener('resize', initDrops);
+setInterval(()=>{
+  ctx.fillStyle='rgba(2,11,14,0.05)';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle='#00d4ff'; ctx.font='14px Share Tech Mono';
+  drops.forEach((y,i)=>{
+    ctx.fillText(chars[Math.floor(Math.random()*chars.length)], i*20, y*20);
+    if(y*20 > canvas.height && Math.random() > 0.975) drops[i]=0;
+    drops[i]++;
+  });
+}, 60);
+
+/* ══════════════════════════
+   TYPEWRITER
+══════════════════════════ */
+const phrases = [
+  'SOC Analyst @ C4SAM, Vienna',
+  'Security Automation Expert @ Leverify, USA',
+  'Junior Penetration Tester @ ITSOLERA',
+  'Digital Forensics Investigator (ex-NCCIA)',
+  'CTI Analyst (ex-National CERT Pakistan)',
+  'DFIR Team Lead @ Air University',
+  'Certified Ethical Hacker (CEH)'
+];
+let pIdx=0, cIdx=0, deleting=false;
+const typeEl = document.getElementById('typed-text');
+function typeWriter(){
+  const phrase = phrases[pIdx];
+  if(deleting){ typeEl.textContent=phrase.substring(0,cIdx--); if(cIdx<0){deleting=false;pIdx=(pIdx+1)%phrases.length;cIdx=0;setTimeout(typeWriter,500);return;} }
+  else{ typeEl.textContent=phrase.substring(0,cIdx++); if(cIdx>phrase.length){deleting=true;setTimeout(typeWriter,2200);return;} }
+  setTimeout(typeWriter, deleting?38:78);
+}
+typeWriter();
+
+/* ══════════════════════════
+   SCROLL ANIMATIONS + SKILL BARS
+══════════════════════════ */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      entry.target.querySelectorAll('.skill-bar-fill').forEach((bar,j) => {
+        setTimeout(()=>{
+          bar.style.width = (parseFloat(bar.getAttribute('data-w')||0.5)*100)+'%';
+          bar.classList.add('animated');
+        }, j*110);
+      });
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+/* ══════════════════════════
+   CONTACT FORM
+═════�
